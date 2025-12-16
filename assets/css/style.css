@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.flag-svg {
+    position: relative;
+}
+.flag-svg::after {
+    content: "";
+    width: 100px;
+    background: linear-gradient(to right, green, yellow, red);
+    height: 5px;
+    position: absolute;
+    top: 10px;
+}
