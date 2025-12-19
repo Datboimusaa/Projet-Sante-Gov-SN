@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+            <section>
+            <div class="container-fluid p-0">
+  <div class="d-flex align-items-center justify-content-center text-white"
+       style="height:200px;
+              background:url(assets/images/section-mediatique.png) center/cover no-repeat;opacity: 0.7">
+    <h1 class="fw-bold text-info">MEDIATHEQUE</h1>
+  </div>
+</div>
+    </section>
+   <section class="carte container my-4">
+  <div class="row">
+    
+    <!-- Carte 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow rounded"style="border:none;" >
+        <img src="assets/images/videotheque-img1.jpeg" class="card-img-top "style="height: 300px; object-fit: cover;" alt="Image 1">
+        <div class="card-body">
+          <p class="card-texte">Publireportage journée mondiale du rein à<br>Kédougou(Français)</p>
+        </div>
+      </div>
+    </div>
+   
+
+
+    <!-- Carte 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100  shadow rounded"style="border:none;">
+        <img src="assets/images/videotheque-img2.jpeg" class="card-img-top"style="height: 300px; object-fit: cover;" alt="Image 3">
+        <div class="card-body">
+          <p class="card-texte">Publireportage journée mondiale du rein à <br>Kédougou(Wolof)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100  shadow rounded"style="border:none;">
+        <img src="assets/images/videotheque-img3.jpeg" class="card-img-top"style="height: 300px; object-fit: cover;" alt="Image 2">
+        <div class="card-body">
+          <p class="card-texte">Film Centre hôspitalier régional Amadou<br>Tidiane Ba de Sédhiou</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100  shadow rounded"style="border:none;">
+        <img src="assets/images/videotheque-img5.jpeg" class="card-img-top"style="height: 300px; object-fit: cover;" alt="Image 3">
+        <div class="card-body">
+          <p class="card-texte">Cérémonie de passation de service entre Dr<br>Marie Khemess Ngom Ndiaye ministre...</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Carte 3 -->
+    <div class="col-md-4  mb-4">
+      <div class="card h-100  shadow rounded"style="border:none;">
+        <img src="assets/images/videotheque-img4.jpeg" class="card-img-top"style="height: 300px; object-fit: cover;" alt="Image 3">
+        <div class="card-body">
+          <p class="card-texte">Spot célébration journée mondiale du rein au<br>centre de santé de Kedougou</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    </div>
+    <div class="tof text-center">
+  <img src="assets/images/videothequeimg-g.png" 
+       class="img-fluid mx-auto d-block" style="height: 300px;"
+       alt="videotheque">
+       <h2 class=""style="font-style: italic;">Pour un Sénégal uni et en bonne santé </h2>
+</div>
+
+</section>
+      
+
+
+ 
+    
+  
+    </section>
+  <section class="cont" >
+ <!-- Inclure Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Section avec la carte -->
+<section id="map" style="height:400px;"></section>
+
+<script>
+  
+  var map = L.map('map').setView([14.4974, -14.4524], 6);
+
+  
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
+
+  
+  L.marker([14.6928, -17.4467]).addTo(map)
+    .bindPopup('Dakar, Sénégal')
+    .openPopup();
+</script>
+
+
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-light"style="position:absolute;top:2%;margin-top:95%;margin-left:5%;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Modal
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog"style="margin-top:25%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Se connecter</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Connectez-vous à Leaflet Online
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</section>
+    </main>
+</body>
+</html>

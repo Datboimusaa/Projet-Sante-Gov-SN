@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+
+        <section class="bg-light text-center">
+        
+      <div class="all d-flex flex-wrap gap-3 "style="justify-content:center;cursor: pointer;">
+  <div class="card  border-0 d-flex flex-row align-items-center mt-5" style="gap:15px; padding:10px;width:400px;">
+    
+    <div class="img">
+      <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"  class="img-fluid" style="width:60px;height: auto; border-radius:8px;">
+    </div>
+    
+    <div class="card-body">
+      <p class="card-text">
+        Projet d’Arrêté portant création, composition et fonctionnement du point focal national du règlement sanitaire international
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="card  border-0 d-flex flex-row align-items-center mt-5" style="gap:15px; padding:10px;width:400px;">
+    
+    <div class="img">
+      <img src="assets/images/section-reglementsanitaire1.jpg" alt="image" class="img-fluid" style="width:40px; height:auto; border-radius:8px;">
+    </div>
+    
+    <div class="card-body">
+      <p class="card-text">
+         Draft de Plan d'Evaluation du Règlement Sanitaire International<br> 2005 Novembre 2011<br>l'application des disposition
+      </p>
+    </div>
+    
+  </div>
+
+
+
+  <div class="card  border-0 d-flex flex-row align-items-center mt-5" style="gap:15px; padding:10px;width:400px;">
+    
+    <div class="img">
+      <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"  class="img-fluid" style="width:60px; height:auto; border-radius:8px;">
+    </div>
+    
+    <div class="card-body">
+      <p class="card-text">
+         Rapport d’évaluation des capacités minimales requises aux Points d’Entrée pour l’application des dispositions du Règlement Sanit
+      </p>
+    </div>
+    
+  </div>
+
+ 
+      </div>
+       <div class="container mt-5 text-center ">
+  <div class="row g-5 align-items-center  ">
+    <div class="col-12 col-md-6 text-center p-3 mb-5" 
+         style="background-color: white; border-radius: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); cursor:pointer;">
+      <h3 class="un"style="text-decoration:underline;">Politique de santé</h3>
+      
+      <div class="un fs-5 text-start">Les structures de santé</div>
+      <hr>
+      <div class="un fs-5 text-start">Politique sanitaire</div>
+      <hr>
+      <div class="un fs-5 text-start">Référence contre Référence</div>
+      <hr>
+      <div class="un fs-5 text-start">Politique Nationale des urgences</div>
+      <hr>
+      <div class="un fs-5 text-start">Pyramide de santé</div>
+    </div>
+    
+    
+    <div class="col-12 col-md-6 text-center mt-5 mb-5">
+      <img src="assets/images/reglementsanitaireimage2.png" 
+           alt="logo" class="img-fluid"style="width: 80%;height: auto;">
+    </div>
+    
+  </div>
+</div>
+       </section>
+       <section class="cont" >
+ <!-- Inclure Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Section avec la carte -->
+<section id="map" style="height:400px;"></section>
+
+<script>
+  
+  var map = L.map('map').setView([14.4974, -14.4524], 6);
+
+  
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
+
+  
+  L.marker([14.6928, -17.4467]).addTo(map)
+    .bindPopup('Dakar, Sénégal')
+    .openPopup();
+</script>
+
+
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-light"style="position:absolute;top:2%;margin-top:62%;margin-left:5%;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Modal
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog"style="margin-top:25%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Se connecter</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Connectez-vous à Leaflet Online
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</section>
+    </main>
+</body>
+</html>
