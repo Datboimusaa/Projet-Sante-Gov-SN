@@ -116,3 +116,52 @@
     position: absolute;
     top: 10px;
 }
+/* structure de santé */
+ .un:hover{
+    color: red;
+}
+
+.card:hover{
+    color: red;
+}
+
+@media (max-width: 576px){
+    .containers{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         margin-bottom: 15%;
+    }
+}
+
+@media (max-width: 576px){
+    .contain{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 15%;
+    }
+}
+
+.card-texte:hover{
+    color:blue;
+}
+
+@media (max-width: 830px) {
+  .btn[data-bs-target="#exampleModal"] {
+    display: none !important;
+
+}
+
+}
+
+@media (max-width: 1500px) {
+  .btn[data-bs-target="#exampleModal"] {
+    display: none !important;
+
+}
+
+}
+
+
