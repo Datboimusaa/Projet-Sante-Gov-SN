@@ -21,9 +21,31 @@
     border-bottom-right-radius: 40%;
     border-bottom-left-radius: 40%;
     background-color: #dc3545;
-    bottom: 0;
-    right: 420px;
+    bottom: -5px;
+    left: 40px;
 }
+
+header {
+  position: relative;
+}
+
+/* baobab background */
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("../images/baobab.png.jpg"); /* update path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 700px auto;
+
+  opacity: 0.04;              /* barely visible */
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+
+
 
 /* hero carousel */
 #carouselExampleCaptions .carousel-item {

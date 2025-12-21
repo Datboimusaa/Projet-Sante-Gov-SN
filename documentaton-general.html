@@ -1,220 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+  <header>
+        <section>
+            <div class="container">
+                <div class="row justify-content-between py-2">
+                    <div class="col-lg-4 d-flex align-items-center gap-3">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="Logo du ministere de la santé"
+                            class="rounded-circle object-fit-cover shadow border" width="90px" height="90px"></a>
+                        <a href="index.html" class="text-decoration-none text-black"><h4 class="border-start ps-3">Ministère de la Santé et de l'Hygiene Publique</h4></a>
+                    </div>
+                    <div class="col-lg-3 text-center">
+                        <img src="assets/images/emblem.png" alt="Logo du ministere de la santé"
+                            class="rounded-circle text-center" width="70px" height="70px">
+                        <p class="lead mb-0">Republique du Sénégal</p>
+                        <p class="fw-bold small">Un Peuple, Un but, Une foi</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-white d-lg-none" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Le Ministère
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="cabinet.html" class="dropdown-item">Le Cabinet</a></li>
+                                    <li><a href="direction.html" class="dropdown-item">Les Directions</a></li>
+                                    <li><a href="services-rattaches.html" class="dropdown-item">Les Services Rattachés</a></li>
+                                    <li><a href="regions-medicales.html" class="dropdown-item">Les Regions Medicales</a></li>
+                                    <li><a href="organigramme.html" class="dropdown-item">Organigramme</a></li>
+                                    <li><a href="anciens-ministres.html" class="dropdown-item">Les anciens ministres</a></li>
+                                    <li><a href="agenda.html" class="dropdown-item">Agenda</a></li>
+                                    <li><a href="partenaires.html" class="dropdown-item">Partenaires</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Politique de santé
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="pyramide-sante.html" class="dropdown-item">Pyramide de Santé</a></li>
+                                    <li><a href="politique-urgences.html" class="dropdown-item">Politique Nationale des Urgences</a></li>
+                                    <li><a href="reference-contre-reference.html" class="dropdown-item">Reference Contre Reference</a></li>
+                                    <li><a href="politique-sanitaire.html" class="dropdown-item">Politique Sanitaire</a></li>
+                                    <li><a href="structuresante.html" class="dropdown-item">Les structure de Santé</a></li>
+                                    <li><a href="reglementsanitaireinter.html" class="dropdown-item">Reglement Sanitaire International</a></li>
+                                    <li><a href="evaluationexterneconjointe.html" class="dropdown-item">Evaluation Externe Conjointe</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Les publications
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="documentaton-general.html" class="dropdown-item">Documentation Générales</a></li>
+                                    <li><a href="texte-legislatif.html" class="dropdown-item">Texts Legislatifs</a></li>
+                                    <li><a href="directions-servicesetdivisions.html" class="dropdown-item">Directions Services et Divisions</a></li>
+                                    <li><a href="bulletins-d'information.html" class="dropdown-item">Bulletin d'information</a></li>
+                                    <li><a href="structuresante.html" class="dropdown-item">Les structure de Santé</a></li>
+                                    <li><a href="reglementsanitaireinter.html" class="dropdown-item">Reglement Sanitaire International</a></li>
+                                    <li><a href="evaluationexterneconjointe.html" class="dropdown-item">Evaluation Externe Conjointe</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mediathèque
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="mediaphotothèque.html" class="dropdown-item">Phototèque</a></li>
+                                    <li><a href="mediavideothèque.html" class="dropdown-item">Videothèque</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="programmes et projet.html">Programmes et projets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="actualites.html">Actualités</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="communiques.html">Communiqués</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="d-none d-lg-block"><i
+                            class="bi bi-search text-white pe-5 d-none d-lg-block"></i></a>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+
+  <main>
     <main>
-        <main>
-            <section>
-            <div class="container-fluid p-0">
-  <div class="d-flex align-items-center justify-content-center text-white"
-       style="height:200px;
+      <section>
+        <div class="container-fluid p-0">
+          <div class="d-flex align-items-center justify-content-center text-white" style="height:200px;
               background:url(assets/images/section-publication-img-bg.jpeg) center/cover no-repeat;opacity: 0.7">
-    <h1 class="fw-bold text-info">PUBLICATIONS</h1>
-  </div>
-</div>
-    </section>
-  <section class="bg-light">
-    
-    <div class="container d-flex flex-column align-items-center gap-5  mb-5">
-
-      
-      <div class="d-flex flex-column bg-white p-4 rounded shadow-sm w-50 mt-5" 
-           style="width: 300px; cursor:pointer;">
-        <h3 class="un text-decoration-underline">Les publications</h3>
-        <div class="un fs-6 text-start mt-3 text-info">Documentations</div>
-        <hr>
-        <div class="un fs-6 text-start">Directions Services et Divisions</div>
-        <hr>
-        <div class="un fs-6 text-start">Bulletins Information</div>
-        <hr>
-        <div class="un fs-6 text-start">Textes Législatifs</div>
-      </div>
-      
-      <div class="d-flex flex-wrap justify-content-center gap-3 w-100">
-
-        
-        <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0">Bulletin trimestriel du Système d’Information Sanitaire et social</p>
+            <h1 class="fw-bold text-info">PUBLICATIONS</h1>
           </div>
         </div>
+      </section>
+      <section class="bg-light">
 
-        
-        <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0"> Annuaire des statistiques sanitaires et sociales 2020.pdf</p>
+        <div class="container d-flex flex-column align-items-center gap-5  mb-5">
+
+
+          <div class="d-flex flex-column bg-white p-4 rounded shadow-sm w-50 mt-5"
+            style="width: 300px; cursor:pointer;">
+            <h3 class="un text-decoration-underline">Les publications</h3>
+            <div class="un fs-6 text-start mt-3 text-info">Documentations</div>
+            <hr>
+            <div class="un fs-6 text-start">Directions Services et Divisions</div>
+            <hr>
+            <div class="un fs-6 text-start">Bulletins Information</div>
+            <hr>
+            <div class="un fs-6 text-start">Textes Législatifs</div>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3 w-100">
+
+
+            <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0">Bulletin trimestriel du Système d’Information Sanitaire et social</p>
+              </div>
+            </div>
+
+
+            <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0"> Annuaire des statistiques sanitaires et sociales 2020.pdf</p>
+              </div>
+            </div>
+
+            <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0"> Bulletin trimestriel DQSHH 190422 VF - PDF.pdf</p>
+              </div>
+            </div>
+
+
+
+            <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0"> Plan Directeur Informatique MSAS.pdf</p>
+              </div>
+            </div>
+
+
+            <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0"> Rapport Final ETUDE SUR DCS 2014 ET 2018-2019 GOLLOCK VF (1).pdf</p>
+              </div>
+            </div>
+
+
+
+
+            <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0">Comité National d’Ethique pour la Recherche en Santé (CNERS). Manuel des
+                  procédures deuxième édition.pdf</p>
+              </div>
+            </div>
+
+
+
+
+            <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0"> MSAS Infos Le Magazine du Ministère de la Santé et de l’Action sociale
+                  Edition Spéciale Covid-19.pdf</p>
+              </div>
+            </div>
+
+
+
+
+            <div class="card   border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0"> Manuel des procédures de réponse à l'épidémie Covid-19.pdf</p>
+              </div>
+            </div>
+
+
+
+
+            <div class="card border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0"> Plan d’institutionnalisation du genre au MSAS et de renforcement des
+                  capacités en techniques d’intégration du genre.pdf </p>
+              </div>
+            </div>
+
+
+
+
+            <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm"
+              style="width:400px; min-height:100px;">
+              <img src="assets/images/section-reglementsanitaire1.jpg" alt="image"
+                style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
+              <div class="card-body d-flex align-items-center">
+                <p class="card-text mb-0"> Rapport audit Genre du Ministère de la Santé et de l'Action sociale</p>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="cont">
+        <!-- Inclure Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+        <!-- Section avec la carte -->
+        <section id="map" style="height:400px;"></section>
+
+        <script>
+
+          var map = L.map('map').setView([14.4974, -14.4524], 6);
+
+
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+          }).addTo(map);
+
+
+          L.marker([14.6928, -17.4467]).addTo(map)
+            .bindPopup('Dakar, Sénégal')
+            .openPopup();
+        </script>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light" style="position:absolute;top:2%;margin-top:65%;margin-left:5%;"
+          data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Modal
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" style="margin-top:25%;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Se connecter</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Connectez-vous à Leaflet Online
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-primary">OK</button>
+              </div>
+            </div>
           </div>
         </div>
-    
-        <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0"> Bulletin trimestriel DQSHH 190422 VF - PDF.pdf</p>
-          </div>
-        </div>
-
-
-        
-        <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0"> Plan Directeur Informatique MSAS.pdf</p>
-          </div>
-        </div>
-
-    
-        <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0"> Rapport Final ETUDE SUR DCS 2014 ET 2018-2019 GOLLOCK VF (1).pdf</p>
-          </div>
-        </div>
-
-
-
-    
-        <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0">Comité National d’Ethique pour la Recherche en Santé (CNERS). Manuel des procédures deuxième édition.pdf</p>
-          </div>
-        </div>
-
-
-
-        
-        <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0"> MSAS Infos Le Magazine du Ministère de la Santé et de l’Action sociale Edition Spéciale Covid-19.pdf</p>
-          </div>
-        </div>
-
-
-
-        
-        <div class="card   border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0"> Manuel des procédures de réponse à l'épidémie Covid-19.pdf</p>
-          </div>
-        </div>
-
-
-
-        
-        <div class="card border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0"> Plan d’institutionnalisation du genre au MSAS et de renforcement des capacités en techniques d’intégration du genre.pdf </p>
-          </div>
-        </div>
-
-
-
-        
-        <div class="card  border-0 d-flex flex-row align-items-center p-3 shadow-sm" 
-             style="width:400px; min-height:100px;">
-          <img src="assets/images/section-reglementsanitaire1.jpg" 
-               alt="image" 
-               style="width:50px; height:50px; border-radius:8px; object-fit:cover;">
-          <div class="card-body d-flex align-items-center">
-            <p class="card-text mb-0"> Rapport audit Genre du Ministère de la Santé et de l'Action sociale</p>
-          </div>
-        </div>
-
-   
-      </div>
-
-    </div>
-  </section>
-
-  <section class="cont" >
- <!-- Inclure Leaflet -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-<!-- Section avec la carte -->
-<section id="map" style="height:400px;"></section>
-
-<script>
-  
-  var map = L.map('map').setView([14.4974, -14.4524], 6);
-
-  
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap'
-  }).addTo(map);
-
-  
-  L.marker([14.6928, -17.4467]).addTo(map)
-    .bindPopup('Dakar, Sénégal')
-    .openPopup();
-</script>
-
-
-              <!-- Button trigger modal -->
-<button type="button" class="btn btn-light"style="position:absolute;top:2%;margin-top:65%;margin-left:5%;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Modal
-</button>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog"style="margin-top:25%;">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Se connecter</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Connectez-vous à Leaflet Online
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-        <button type="button" class="btn btn-primary">OK</button>
-      </div>
-    </div>
-  </div>
-</div>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</section>
+      </section>
     </main>
+
+        <footer>
+        <div class="container-fluid bg-light">
+            <div class="d-flex gap-3 justify-content-center pt-5 py-3 flag-svg">
+                <a href="#" class="text-decoration-none text-muted fw-bold">
+                    Mentions Légales
+                </a>
+                &#10073;
+                <a href="#" class="text-decoration-none text-muted fw-bold">
+                    RSS
+                </a>
+                &#10073;
+                <a href="#" class="text-decoration-none text-muted fw-bold">
+                    Contact
+                </a>
+            </div>
+            <div class="d-flex gap-3 justify-content-center p-3">
+                <a href="#" class="text-decoration-none text-muted">Présidence de la république</a>
+                <a href="#" class="text-decoration-none text-muted">ARP</a> <a href="#"
+                    class="text-decoration-none text-muted">OMS</a> <a href="#"
+                    class="text-decoration-none text-muted">PNLP</a>
+                <a href="#" class="text-decoration-none text-muted">COUS</a> <a href="#"
+                    class="text-decoration-none text-muted">SAMU</a> <a href="#"
+                    class="text-decoration-none text-muted">CNLS</a>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center py-3">
+                <div class="col-lg-4 justify-content-lg-start justify-content-center d-flex">
+                    <p>
+                        © 2020- Ministère de la santé et de l'Action Sociale
+                    </p>
+                </div>
+                <div class="col-lg-4 justify-content-lg-end justify-content-center d-flex">
+                    <a href="" class="text-decoration-none text-muted">
+                        Réalisé par l'Agence De l'Informatique de l'Etat
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom JS -->
+    <script src="assets/js/index.js"></script>
 </body>
+
 </html>
