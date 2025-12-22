@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* structure de santé */
  .un:hover{
     color: red;
@@ -47,3 +48,35 @@
 }
 
 
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.flag-svg {
+    position: relative;
+}
+.flag-svg::after {
+    content: "";
+    width: 100px;
+    background: linear-gradient(to right, green, yellow, red);
+    height: 5px;
+    position: absolute;
+    top: 10px;
+}
+>>>>>>> d2382d3515b6ab345ca94884c0ed7b200355c659
